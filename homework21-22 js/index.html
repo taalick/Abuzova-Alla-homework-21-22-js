@@ -1,0 +1,74 @@
+<!DOCTYPE>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Абузова Алла Homework 13-14 js</title>
+			<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+			<link rel="stylesheet" href="css/style.css">
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+				
+			<script src="js/tmpl.js"></script>
+			<script src="js/dist/saveToJSON.js"></script>
+			<script src="js/dist/loadFromJSON.js"></script>			
+			<script src="js/dist/calculation.js"></script>
+		
+			<style>
+				.fancybox-modal{
+					position: absolute;
+					width: 350px;
+					height: 180px;
+					top:50%;
+					left: 50%;
+					margin: -109px 0 0 -117px;
+					text-align: center;
+					background: white;
+					padding-top: 20px;
+					border: 3px solid black;
+				}
+				.fancybox-overlay{
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0, 0, 0, 0.5);										
+				}
+
+				.fancybox-close{
+					background-image: url('img/fancybox_sprite.png');
+					position: absolute;
+					top: -18px;
+					right: -18px;
+					width: 36px;
+					height: 36px;
+					cursor: pointer;
+					z-index: 8040;
+
+				}
+			</style>			
+		</head>
+		<body>
+			<script type="text/template" id="test">
+			<div class="wrapper">
+				<h1 class="title"><%= constants.title %></h1>
+					<ol>
+						<% for(var i=0; i<questionsansvers.length; i++) { %>
+						<li class="listLiClass" id="questionsansvers<%= i %>"><%= questionsansvers[i].question %><br>
+							<form class="formClass">
+								<label>								
+									<input type="radio" class="radioClass" name="radioName1" id="ansver1"><p class="pClass"><%= questionsansvers[i].answer1%></p><br>								
+								</label>
+								<label>								
+									<input type="radio" class="radioClass" name="radioName1" id="ansver2>"><p class="pClass"><%= questionsansvers[i].answer2%></p><br>								
+								</label>
+								<label>								
+									<input type="radio" class="radioClass" name="radioName1" id="ansver3"><p class="pClass"><%= questionsansvers[i].answer3%></p><br>								
+								</label>
+							</form>
+						</li>											
+						<% }; %>
+					</ol>
+				<input class="pure-button buttonClass" type="submit" id="calc" value='<%= constants.button %>'></div>
+			</script>			
+		</body>
+	</html>

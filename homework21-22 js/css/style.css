@@ -1,0 +1,61 @@
+/*____________________ ZEROING ________________*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*____________________ WRAPPER ________________*/
+
+.title{
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: -1px;
+    font-weight: normal;
+    margin-bottom: 45px;
+}
+
+.classOl{
+	text-align: center;
+}
+
+.listLiClass{
+	    margin-left: 155px;
+}
+
+
+
+.pClass{
+	display: inline-block;
+	padding-left: 5px;
+	line-height: 20px;
+    vertical-align: middle;
+	
+}
+
+.formClass{
+	display: inline-block;
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.buttonClass{
+	margin-left: 283px;
+    margin-top: 42px;
+    width: 327px;
+    height: 56px;
+    border: 3px solid #000205;
+   	background: #CFE2F3;
+    font-size: 20px;
+}
+
+.radioClass{
+	
+	background: #CFE2F3;
+	color: 	#CFE2F3;
+	height: 16px;
+	width: 16px;
+	border: 1px solid #CFE2F3;
+	margin-left: 5px;
+
+}
